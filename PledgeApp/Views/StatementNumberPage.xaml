@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PledgeApp.Views.StatementNumberPage"
+             Shell.NavBarIsVisible="False" 
+             Title="StatementNumberPage">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="0, 100"
+            
+        VerticalOptions="CenterAndExpand"
+        HorizontalOptions="CenterAndExpand">
+        <Label 
+            Text="Введите номер заявки на кредит:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="20"/>
+        <Entry 
+            Placeholder="Номер заявки"/>
+        <Button Text="Ок"
+                Clicked="OpenImagesPage_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
